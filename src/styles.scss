@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg: #f7f7fa;
+  --surface: #ffffff;
+  --surface-soft: #f1f1f5;
+  --text: #151515;
+  --text-secondary: #707078;
+  --text-muted: #96969d;
+  --border: #e7e7eb;
+  --primary: #635bff;
+  --primary-dark: #5148e8;
+  --green: #18a957;
+  --shadow: 0 12px 40px rgba(25, 25, 45, 0.08);
+  --header-bg: rgba(247, 247, 250, 0.82);
+}
+
+body.dark-mode {
+  --bg: #0d0d0f;
+  --surface: #171719;
+  --surface-soft: #212124;
+  --text: #f5f5f7;
+  --text-secondary: #a4a4ad;
+  --text-muted: #777780;
+  --border: #2c2c30;
+  --primary: #8079ff;
+  --primary-dark: #7068f4;
+  --green: #27c970;
+  --shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+  --header-bg: rgba(13, 13, 15, 0.82);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
