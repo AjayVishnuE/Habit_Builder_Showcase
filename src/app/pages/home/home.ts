@@ -1,9 +1,20 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [],
   selector: 'app-home',
-  styleUrl: './home.scss',
+  standalone: true,
+  imports: [RouterLink],
   templateUrl: './home.html',
+  styleUrl: './home.scss'
 })
-export class Home {}
+export class Home {
+
+  scrollToFeatures(): void {
+    document
+      .getElementById('features')
+      ?.scrollIntoView({
+        behavior: 'smooth'
+      });
+  }
+}
