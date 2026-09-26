@@ -1,1 +1,150 @@
-<p>contact works!</p>
+<section class="contact-page">
+
+  <div class="contact-intro">
+
+    <span class="section-label">
+      LET'S TALK
+    </span>
+
+    <h1>
+      Have an idea?
+      <span>Tell us.</span>
+    </h1>
+
+    <p>
+      Found something that could make DayVia better?
+      Have a question, suggestion or just want to say hello?
+      We'd love to hear from you.
+    </p>
+
+  </div>
+
+
+  <div class="contact-layout">
+
+    <div class="contact-info">
+
+      <div class="info-card">
+
+        <span class="info-number">
+          01
+        </span>
+
+        <h3>
+          Questions
+        </h3>
+
+        <p>
+          Something isn't clear? Ask us about how DayVia works.
+        </p>
+
+      </div>
+
+
+      <div class="info-card">
+
+        <span class="info-number">
+          02
+        </span>
+
+        <h3>
+          Suggestions
+        </h3>
+
+        <p>
+          Have a feature idea? Tell us what you'd like to see next.
+        </p>
+
+      </div>
+
+
+      <div class="info-card">
+
+        <span class="info-number">
+          03
+        </span>
+
+        <h3>
+          Feedback
+        </h3>
+
+        <p>
+          Your experience can help shape where DayVia goes next.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <form
+      class="contact-form"
+      (ngSubmit)="sendMail()">
+
+      <div class="field">
+
+        <label>
+          Name
+        </label>
+
+        <input
+          type="text"
+          name="name"
+          [(ngModel)]="name"
+          placeholder="Your name"
+          required>
+
+      </div>
+
+
+      <div class="field">
+
+        <label>
+          Email
+        </label>
+
+        <input
+          type="email"
+          name="email"
+          [(ngModel)]="email"
+          placeholder="you@example.com"
+          required>
+
+      </div>
+
+
+      <div class="field">
+
+        <label>
+          Message
+        </label>
+
+        <textarea
+          name="message"
+          [(ngModel)]="message"
+          rows="7"
+          placeholder="Tell us what's on your mind..."
+          required>
+        </textarea>
+
+      </div>
+
+
+      <button
+        type="submit"
+        class="send-button">
+
+        Open email →
+
+      </button>
+
+      <small>
+        Your default email application will open with
+        your message ready to send.
+      </small>
+
+    </form>
+
+  </div>
+
+</section>
