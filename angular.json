@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "dayvia-showcase": {
+    "DayLivo-showcase": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -62,10 +62,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "dayvia-showcase:build:production"
+              "buildTarget": "DayLivo-showcase:build:production"
             },
             "development": {
-              "buildTarget": "dayvia-showcase:build:development"
+              "buildTarget": "DayLivo-showcase:build:development"
             }
           },
           "defaultConfiguration": "development"

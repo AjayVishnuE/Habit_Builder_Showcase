@@ -17,7 +17,7 @@ export class App {
   darkMode = false;
 
   constructor(private renderer: Renderer2) {
-    const savedTheme = localStorage.getItem('dayvia-theme');
+    const savedTheme = localStorage.getItem('DayLivo-theme');
     if (savedTheme === 'dark') {
       this.darkMode = true;
       this.applyTheme();
@@ -27,7 +27,7 @@ export class App {
   toggleTheme(): void {
     this.darkMode = !this.darkMode;
     localStorage.setItem(
-      'dayvia-theme',
+      'DayLivo-theme',
       this.darkMode ? 'dark' : 'light'
     );
     this.applyTheme();

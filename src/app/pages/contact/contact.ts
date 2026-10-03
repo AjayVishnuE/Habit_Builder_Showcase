@@ -19,7 +19,7 @@ export class Contact {
     const recipient = 'ajayvishnu121@gmail.com';
 
     const subject =
-      `DayVia — Message from ${this.name || 'a user'}`;
+      `DayLivo — Message from ${this.name || 'a user'}`;
 
     const body = ` Name: ${this.name} Email: ${this.email} Message: ${this.message} `;
 
